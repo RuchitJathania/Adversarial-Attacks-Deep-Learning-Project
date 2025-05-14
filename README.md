@@ -18,7 +18,7 @@ This project is organized into **five major tasks**, all contained in a single J
 - Implements **FGSM** with ε = 0.02 (L∞ constraint)
 - Creates a new set of adversarial images (“Adversarial Test Set 1”)
 - Evaluates attack effectiveness (accuracy drop) and visual similarity
-![Alt Text](fgsm_examples1.png)
+![Alt Text]([fgsm_examples1.png](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/fgsm_examples1.png))
 
 ### Task 3: **Projected Gradient Descent (PGD) Attack**
 - Improves over FGSM by applying **multiple gradient steps**
