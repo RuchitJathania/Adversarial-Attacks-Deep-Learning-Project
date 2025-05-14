@@ -21,11 +21,11 @@ Results:
 ### Task 2: **Fast Gradient Sign Method (FGSM) Attack**
 - Implements **FGSM** with ε = 0.02 (L∞ constraint)
 - Creates a new set of adversarial images (“Adversarial Test Set 1”)
-- Evaluates attack effectiveness (accuracy drop) and visual similarity /
-Results: /
-  Total samples evaluated: 500 /
-  Top-1 Accuracy: 6.20% /
-  Top-5 Accuracy: 46.40% /
+- Evaluates attack effectiveness (accuracy drop) and visual similarity \
+Results: \
+  Total samples evaluated: 500 \
+  Top-1 Accuracy: 6.20% \
+  Top-5 Accuracy: 46.40% \
   
   ![fgsm_examples1.png](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/fgsm_examples1.png)
 
