@@ -13,23 +13,43 @@ This project is organized into **five major tasks**, all contained in a single J
   mean = [0.485, 0.456, 0.406]
   std = [0.229, 0.224, 0.225]
   ```
+Results:
+  Total samples evaluated: 513
+  Top-1 Accuracy: 75.44%
+  Top-5 Accuracy: 93.96%
 
 ### Task 2: **Fast Gradient Sign Method (FGSM) Attack**
 - Implements **FGSM** with ε = 0.02 (L∞ constraint)
 - Creates a new set of adversarial images (“Adversarial Test Set 1”)
 - Evaluates attack effectiveness (accuracy drop) and visual similarity
+Results:
+  Total samples evaluated: 500
+  Top-1 Accuracy: 6.20%
+  Top-5 Accuracy: 46.40%
+  
   ![fgsm_examples1.png](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/fgsm_examples1.png)
+
 
 ### Task 3: **Projected Gradient Descent (PGD) Attack**
 - Improves over FGSM by applying **multiple gradient steps**
 - Constructs “Adversarial Test Set 2”
 - Reports performance drop (target: ≥ 70% drop in Top-1 accuracy)
+Results:
+  Total samples evaluated: 500
+  Top-1 Accuracy: 0.80%
+  Top-5 Accuracy: 40.60%
+  
 ![(iterarive_fgsm_examples1.png)](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/iterarive_fgsm_examples1.png)
 
 ### Task 4: **Targeted Patch Attack**
 - Restricts perturbations to a **32×32 patch** (ε increased to 0.5)
 - Optimizes a universal adversarial patch targeting a fixed class (e.g., toaster)
 - Saves results as “Adversarial Test Set 3”
+Results:
+  Total samples evaluated: 500
+  Top-1 Accuracy: 61.40%
+  Top-5 Accuracy: 83.00%
+  
 ![](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/patch_attack_examples.png)
 ### Task 5: **Transferability Evaluation**
 - Tests adversarial examples on another model (`DenseNet-121`)
@@ -39,6 +59,26 @@ This project is organized into **five major tasks**, all contained in a single J
   - PGD (Set 2)
   - Patch attack (Set 3)
 - Discusses transferability and implications
+Baseline Performance (Densenet 121)
+  Total samples evaluated: 513
+  Top-1 Accuracy: 74.27%
+  Top-5 Accuracy: 93.57%
+FGSM Attack on Densenet 121 (using adversarial test
+set from ResNet-34 FGSM attack)
+  Total samples evaluated: 500
+  Top-1 Accuracy: 55.00%
+  Top-5 Accuracy: 85.60%
+PGD Attack on Densenet 121 (using adversarial test
+set from ResNet-34 PGD attack)
+  Total samples evaluated: 500
+  Top-1 Accuracy: 59.80%
+  Top-5 Accuracy: 90.40%
+Universal Patch Attack on Densenet 121 (using ad-
+versarial test set from ResNet-34 Universal Patch Attack)
+  Total samples evaluated: 500
+  Top-1 Accuracy: 68.00%
+  Top-5 Accuracy: 87.20%
+
 
 ## Running the Notebook
 
