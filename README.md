@@ -24,7 +24,7 @@ This project is organized into **five major tasks**, all contained in a single J
 - Improves over FGSM by applying **multiple gradient steps**
 - Constructs “Adversarial Test Set 2”
 - Reports performance drop (target: ≥ 70% drop in Top-1 accuracy)
-![Alt Text](iterarive_fgsm_examples1.png)
+![(iterarive_fgsm_examples1.png)](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/iterarive_fgsm_examples1.png)
 
 ### Task 4: **Targeted Patch Attack**
 - Restricts perturbations to a **32×32 patch** (ε increased to 0.5)
