@@ -38,7 +38,7 @@ This project is organized into **five major tasks**, all contained in a single J
   - Patch attack (Set 3)
 - Discusses transferability and implications
 
-## ▶Running the Notebook
+## Running the Notebook
 
 1. **Clone the repo:**
    ```bash
@@ -61,14 +61,14 @@ This project is organized into **five major tasks**, all contained in a single J
      - `AdversarialTestSet2/` (PGD)
      - `AdversarialTestSet3/` (Patch)
 
-## 📊 Outputs
+## Outputs
 
 - Visualizations of 3–5 adversarial examples per method
 - Top-1 and Top-5 accuracy reports per dataset
 - Patch visualizations and heatmaps (optional)
 - Final comparison of all 4 datasets on both ResNet-34 and DenseNet-121
 
-## 📌 Notes
+## Notes
 
 - The notebook supports both **CPU and GPU** (MPS if on Mac).
 - Git LFS is recommended for storing `.ipynb` files > 50MB.
