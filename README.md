@@ -18,7 +18,7 @@ This project is organized into **five major tasks**, all contained in a single J
 - Implements **FGSM** with ε = 0.02 (L∞ constraint)
 - Creates a new set of adversarial images (“Adversarial Test Set 1”)
 - Evaluates attack effectiveness (accuracy drop) and visual similarity
-![Alt Text]([fgsm_examples1.png](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/fgsm_examples1.png))
+  ![fgsm_examples1.png](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/fgsm_examples1.png)
 
 ### Task 3: **Projected Gradient Descent (PGD) Attack**
 - Improves over FGSM by applying **multiple gradient steps**
@@ -30,8 +30,7 @@ This project is organized into **five major tasks**, all contained in a single J
 - Restricts perturbations to a **32×32 patch** (ε increased to 0.5)
 - Optimizes a universal adversarial patch targeting a fixed class (e.g., toaster)
 - Saves results as “Adversarial Test Set 3”
-![Alt Text](patch_attack_examples.png)
-
+![](https://github.com/RuchitJathania/Adversarial-Attacks-Deep-Learning-Project/blob/main/patch_attack_examples.png)
 ### Task 5: **Transferability Evaluation**
 - Tests adversarial examples on another model (`DenseNet-121`)
 - Reports accuracy across:
